@@ -1,0 +1,1 @@
+# Thread_communications_Qt_C-
