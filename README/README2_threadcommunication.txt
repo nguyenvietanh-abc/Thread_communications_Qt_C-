@@ -7,3 +7,6 @@ Trong library_oop TC dùng để tách biệt các tác vụ khỏi main thread 
 + Thread-Safe Requirement: do shared memory nên Cần cơ chế đồng bộ hóa như lock, mutex, signal - slot (Qt) để tránh race condition khi multi thread cùng truy cập 1 dữ liệu.
 +Cơ chế giao tiếp: chọn Safe-Tread
 
+>> Sự khác biệt chính giữa Thread - Communications với IPC (Inter process communications) ở chỗ IPC cho phép đa tiến trình (multi processes) trong hệ điều hành có thể trao đổi dữ liệu or tín hiệu với nhau. 
+
+IPC: Mỗi process là một chương trình đang chạy mang không gian bộ nhớ riêng (reparate adress space) != shared address space trong TC. Ví dụ như 2 client với 1 server. 
